@@ -230,3 +230,66 @@
 //   res = res + i;
 // }
 // console.log(res);
+
+// Function
+
+// const role = 'admin';
+//  function checkAccess(permissionrole) {
+//   if (role === 'admin') {
+//     return true;
+//   } else {
+//     return false
+//   }
+//  }
+//  console.log(checkAccess(role));
+
+// function showMessage(message) {
+//   console.log(checkAccess(role) ? 'Bonjour admin' : 'Bonjour utilisateur ');
+// }
+
+// function sayHi(userName = 'Utilisateur') {
+//   console.log(`Bonjour ${userName}`);
+// } 
+
+// function sum(number, powNumber = 1) {
+//   return number**powNumber;
+// }
+// console.log(sum(2, 3)); 
+
+let showText = function(text) {
+  console.log(text);
+}
+let showTextNew = function (text) {
+  console.log(text + '!!!');
+}
+
+function test(func, number) {
+  if (number > 10) {
+    func('Bonjour');
+  }
+  func('Aurevoir');
+}
+test(showText, 10);
+test(showTextNew, 10); 
+
+//  Differente maniere de creer une fonction
+// const sum = (a,b) => a + b;
+
+// const sum = (a,b) => {
+//   return a + b;
+// }
+
+// function sum(a,b) {
+//   return a+ b;  
+// }
+
+// const sum = function(a,b){
+//   return a + b;
+// }
+
+const texteToRepeat= 'Bonjour les amis';
+let repeat = (texteToRepeat, n) => {
+  for(let i = 0; i < n; i++) {
+    console.log(texteToRepeat);
+  }
+}
