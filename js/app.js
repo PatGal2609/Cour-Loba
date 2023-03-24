@@ -32,18 +32,43 @@
 // console.log(message);
  //LA meme chose avec switch
 
- const color = '';
- switch (color) {
-  case 'red':
-    console.log('Stop');
-    break;
-  case 'green':
-    console.log('Roulez');
-    break;
-  case 'yellow':
-    console.log('Attention');
-    break;
-  default:
-    console.log('Feux en panne');
-    break;
- }
+//  const color = '';
+//  switch (color) {
+//   case 'red':
+//     console.log('Stop');
+//     break;
+//   case 'green':
+//     console.log('Roulez');
+//     break;
+//   case 'yellow':
+//     console.log('Attention');
+//     break;
+//   default:
+//     console.log('Feux en panne');
+//     break;
+//  }
+// while, for
+
+// let n = 0;
+
+// while (n < 0) {
+//   console.log(n);
+//   n++;
+// }
+
+// const nM = 10;
+// for(let i = 0; i < nM; i++){
+//   console.log(i + ' Ecrit cette phrase ' + nM + ' fois')
+// }
+let countCars = 49;
+const minCars = 3;
+let day = 0;
+while (countCars > minCars) {
+  countCars = Math.ceil(countCars / 2);
+
+  day++;
+}
+console.log(`Au ${day} jours, il reste moins de ${minCars}`)
+// const a = 7;
+// const b = 2;
+// console.log(Math.ceil(a / b));
